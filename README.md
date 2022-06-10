@@ -57,7 +57,7 @@ Below example apache24 virtual host config.
     
     [...]
 
-    DefineExternalAuth ntlmAuth pipe "/tools/ntlm_auth_wrapper/ntlm_auth_wrapper -e /usr/local/bin/ntlm_auth -m MYDOMAIN.local -m MYDOMAIN\\Required-AD-Group"
+    DefineExternalAuth ntlmAuth pipe "/tools/ntlm_auth_wrapper/ntlm_auth_wrapper -e /usr/local/bin/ntlm_auth -d MYDOMAIN.local -m MYDOMAIN\\Required-AD-Group"
 
     <Directory "/usr/local/www/apache24/data">
         Order deny,allow
