@@ -65,7 +65,6 @@ Below example apache24 virtual host config.
         AuthType Basic
         AuthName "NTLM auth"
         AuthBasicProvider external
-        AuthnCacheProvideFor external
         AuthExternal ntlmAuth
         Require valid-user
     </Directory>
